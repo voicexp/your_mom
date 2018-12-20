@@ -1,0 +1,325 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "magic wax",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ResetIntent",
+                    "slots": [],
+                    "samples": [
+                        "reset welcome",
+                        "start from the top",
+                        "start from the beginning",
+                        "start over",
+                        "welcome message",
+                        "reset welcome message",
+                        "reset the skill"
+                    ]
+                },
+                {
+                    "name": "CustomOneIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me the news",
+                        "tell me what's new",
+                        "what's new"
+                    ]
+                },
+                {
+                    "name": "CustomTwoIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me about custom intent two",
+                        "what is custom intent two",
+                        "talk about custom intent two",
+                        "custom intent two",
+                        "i want to hear custom intent two"
+                    ]
+                },
+                {
+                    "name": "CustomThreeIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me about custom intent three",
+                        "what is custom intent three",
+                        "talk about custom intent three",
+                        "custom intent three",
+                        "i want to hear custom intent three"
+                    ]
+                },
+                {
+                    "name": "CustomFourIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me about custom intent four",
+                        "what is custom intent four",
+                        "talk about custom intent four",
+                        "custom intent four",
+                        "i want to hear custom intent four"
+                    ]
+                },
+                {
+                    "name": "CustomFiveIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me about custom intent five",
+                        "what is custom intent five",
+                        "talk about custom intent five",
+                        "custom intent five",
+                        "i want to hear custom intent five"
+                    ]
+                },
+                {
+                    "name": "MenuIntent",
+                    "slots": [],
+                    "samples": [
+                        "menu",
+                        "top menu",
+                        "take me to the menu",
+                        "open the menu",
+                        "top",
+                        "home",
+                        "menu please"
+                    ]
+                },
+                {
+                    "name": "IndustrialIntent",
+                    "slots": [],
+                    "samples": [
+                        "improving the industry",
+                        "improve the industry",
+                        "improve industry",
+                        "how are they improving the industry",
+                        "tell me about improving the industry",
+                        "How is clay co improving the industry",
+                        "how improve industry",
+                        "clay co improving industry",
+                        "improving industry",
+                        "tell me about clay co improving industry"
+                    ]
+                },
+                {
+                    "name": "ProjectsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Tell me about Clayco's projects ",
+                        "what are some of ClayCo's projects",
+                        "what are some clay co projects",
+                        "what are some clayco projects",
+                        "tell me some of the projects",
+                        "tell me some projects",
+                        "what are some projects",
+                        "tell me about some projects",
+                        "Tell me about some of clay cos projects",
+                        "projects",
+                        "what are some of clay cos projects",
+                        "clay co projects",
+                        "does clay co have any project information"
+                    ]
+                },
+                {
+                    "name": "XaltIntent",
+                    "slots": [],
+                    "samples": [
+                        "Tell me about Xalt Energy",
+                        "What about Xalt energy",
+                        "Can you tell me anything about Xalt Energy",
+                        "Xalt energy",
+                        "salt",
+                        "salt energy"
+                    ]
+                },
+                {
+                    "name": "AmazonIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me about amazon",
+                        "Tell me about Amazon data centers",
+                        "data centers",
+                        "amazon data centers",
+                        "what about data centers",
+                        "what about amazon data centers"
+                    ]
+                },
+                {
+                    "name": "GoldenStateFoodsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Can You tell me about golden state foods",
+                        "tell me about golden state foods",
+                        "golden state foods",
+                        "what about golden stat foods",
+                        "Can I hear about golden state foods"
+                    ]
+                },
+                {
+                    "name": "BeyondTheseWallsIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me about their wokr in the community",
+                        "how do they help the community",
+                        "community service",
+                        "Tell me about some of clay cos work in the community",
+                        "community work",
+                        "working in the community",
+                        "clay co in the community",
+                        "can you tell me about clay co community work"
+                    ]
+                },
+                {
+                    "name": "CoreValuesIntent",
+                    "slots": [],
+                    "samples": [
+                        "what is this gift",
+                        "why did they send me this",
+                        "what are your core values",
+                        "about clay co",
+                        "who is clay co",
+                        "what about clay co",
+                        "why did I get this",
+                        "for about clay co",
+                        "about clay co",
+                        "why was I sent this"
+                    ]
+                },
+                {
+                    "name": "GoodbyeIntent",
+                    "slots": [],
+                    "samples": [
+                        "see ya",
+                        "peace out",
+                        "goodbye",
+                        "i would like to leave",
+                        "i'm done",
+                        "done",
+                        "finished",
+                        "finish"
+                    ]
+                },
+                {
+                    "name": "PlayVideoIntent",
+                    "slots": [
+                        {
+                            "name": "videoName",
+                            "type": "videoName"
+                        }
+                    ],
+                    "samples": [
+                        "play the {videoName} video",
+                        "watch the {videoName} video",
+                        "watch {videoName}",
+                        "{videoName} video",
+                        "play {videoName} video",
+                        "play me the {videoName} video",
+                        "Play {videoName}",
+                        "Play the {videoName}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "videoName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "industrial",
+                                "synonyms": [
+                                    "improvements",
+                                    "industry",
+                                    "for industry",
+                                    "improve industry",
+                                    "industry improvements",
+                                    "industrial improvements"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
