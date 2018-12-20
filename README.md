@@ -1,64 +1,35 @@
-Welcome to the AWS CodeStar sample web application
-==================================================
+Welcome to the AWS CodeStar 'hello world' sample project for  Alexa Skills Kit (Node.js)
+========================================================================================
 
-This sample code helps get you started with a simple Node.js web service deployed by AWS CloudFormation to AWS Lambda and Amazon API Gateway.
+This project helps first-time Alexa Skills Kit developers get started by providing them with a working 'hello world' skill. This project provisions a sample Alexa skill that uses the custom interaction model, an AWS Lambda function, and an AWS CodePipeline continuous integration/continuous delivery (CI/CD) pipeline.
+
+**NOTE** : You should only make edits in the repository. Do not edit this skill directly using any other Alexa Skills Kit tools which are not integrated with this repository.
+
+Pre-requisites
+--------------
+* You must already have created an [Amazon Developer account](https://developer.amazon.com/).
 
 What's Here
 -----------
-
-This sample includes:
-
-* README.md - this file
-* buildspec.yml - this file is used by AWS CodeBuild to package your
-  application for deployment to AWS Lambda
-* index.js - this file contains the sample Node.js code for the web service
-* template.yml - this file contains the AWS Serverless Application Model (AWS SAM) used
-  by AWS CloudFormation to deploy your application to AWS Lambda and Amazon API
-  Gateway.
-* tests/ - this directory contains unit tests for your application
-* template-configuration.json - this file contains the project ARN with placeholders used for tagging resources with the project ID
+* skill.json - contains the skill manifest that provides Alexa with your skill metadata. [See manifest documentation here](https://developer.amazon.com/docs/smapi/skill-manifest.html)
+* interactionModels - contains interaction model files in JSON format. [See interaction model documentation here](https://developer.amazon.com/docs/smapi/interaction-model-schema.html).
+  * en-US.json - contains the interaction model for the en-US locale.
+* lambda - the parent folder that contains the code of all Lambda functions of this skill.
+  * custom
+    * package.json - contains a list of all dependencies.
+    * index.js - contains the request handling code that will be deployed to AWS Lambda function.
+* buildspec.yml - used by AWS CodeBuild to package the Lambda function code to be deployed by CodePipeline using CloudFormation.
+* cfn-template.yml - the template with reference to Lambda function code to be deployed by CloudFormation.
+* README.md - this file.
 
 What Do I Do Next?
 ------------------
+* The default invocation name of your skill is 'hello node'.
+* Test the 'hello world' skill in the Alexa Simulator. From your AWS CodeStar project dashboard, choose the Alexa Simulator button. You can also go to the [Alexa Skills Kit developer console](https://developer.amazon.com/alexa/console/ask), select your skill, and choose the Test tab. Enable testing and type or say, "Open hello node" or "ask hello node hello".
+* Once the skill is enabled in the Alexa Simulator, it can also be invoked on an Alexa enabled device which is registered with your Amazon developer account.
+* Understand the fundamental concepts of an Alexa skill. See [this video playlist](https://www.youtube.com/watch?v=hbH6gZoKcbM&list=PL2KJmkHeYQTMRyGDtVVhEnSGX6FRrkg6X).
+* Configure your project repository in your favorite IDE and iterate on your skill. [See instructions for cofiguring an AWS CodeCommit repository with your IDE](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html).
+* Turn your idea into a skill. Read the documentation for [Alexa Skills Kit](https://developer.amazon.com/docs/quick-reference/custom-skill-quick-reference.html) and the [ASK SDK](https://developer.amazon.com/docs/quick-reference/use-sdks-quick-reference.html).
+* Go to the [Alexa Skills Kit developer console](https://developer.amazon.com/alexa/console/ask) to submit, certify and publish your skill.
 
-If you have checked out a local copy of your repository you can start making
-changes to the sample code.  We suggest making a small change to index.js first,
-so you can see how changes pushed to your project's repository are automatically
-picked up by your project pipeline and deployed to AWS Lambda and Amazon API Gateway.
-(You can watch the pipeline progress on your AWS CodeStar project dashboard.)
-Once you've seen how that works, start developing your own code, and have fun!
-
-To run your tests locally, go to the root directory of the
-sample code and run the `npm test` command, which
-AWS CodeBuild also runs through your `buildspec.yml` file.
-
-To test your new code during the release process, modify the existing tests or
-add tests to the tests directory. AWS CodeBuild will run the tests during the
-build stage of your project pipeline. You can find the test results
-in the AWS CodeBuild console.
-
-Learn more about AWS CodeBuild and how it builds and tests your application here:
-https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html
-
-Learn more about AWS Serverless Application Model (AWS SAM) and how it works here:
-https://github.com/awslabs/serverless-application-model/blob/master/HOWTO.md
-
-AWS Lambda Developer Guide:
-http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html
-
-Learn more about AWS CodeStar by reading the user guide, and post questions and
-comments about AWS CodeStar on our forum.
-
-User Guide: http://docs.aws.amazon.com/codestar/latest/userguide/welcome.html
-
-Forum: https://forums.aws.amazon.com/forum.jspa?forumID=248
-
-What Should I Do Before Running My Project in Production?
-------------------
-
-AWS recommends you review the security best practices recommended by the framework
-author of your selected sample application before running it in production. You
-should also regularly review and apply any available patches or associated security
-advisories for dependencies used within your application.
-
-Best Practices: https://docs.aws.amazon.com/codestar/latest/userguide/best-practices.html?icmpid=docs_acs_rm_sec
+NOTE : You should only make edits in the repository. Do not edit this skill directly in the Alexa Skills Kit developer console or using any other Alexa Skills Kit tools as the skill will get out of sync with your repository.
